@@ -1,17 +1,6 @@
-import matplotlib.pyplot as plt
-import scipy as sp
 import numpy as np
-from math import sin, cos, sqrt, pi, floor, ceil, exp, log, atan, acos
-from math import factorial, nan, comb
-from random import choice, uniform
+from math import factorial
 from itertools import product
-from PIL import ImageGrab,Image
-import io
-import subprocess
-import os
-import tkinter as tk
-
-#import VisualizationTools
 
 def doubleFactorial(m):
     if m<-1:
@@ -188,20 +177,9 @@ def FindConnection(n,N):
 
 if __name__ == "__main__":
 
-    max_N = 5
+    max_N = 4
     for N in range(1,max_N+1):
         for n in range(1,N+1):
             print("########################################")
             print("n={} N={}".format(n,N))
             CheckFormula(n,N)
-            #FindConnection(n,N)
-
-
-    #CheckFormula(2,2)
-
-'''
-    print(G1.getLaplacian())
-    print(G2.getLaplacian())
-    print(G1.getSpanningTreeNumber(), G2.getSpanningTreeNumber())
-    print(G1.getWeight(),G2.getWeight())
-'''
